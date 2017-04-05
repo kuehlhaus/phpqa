@@ -23,7 +23,7 @@ trait CodeAnalysisTasks
         'phpcs' => array(
             'optionSeparator' => '=',
             'xml' => ['checkstyle.xml'],
-            'errorsXPath' => '//checkstyle/file/error',
+            'errorsXPath' => '//checkstyle/file/error[@severity="error"]',
             'composer' => 'squizlabs/php_codesniffer',
         ),
         'phpmd' => array(
